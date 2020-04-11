@@ -19,6 +19,9 @@ sudo yum remove opa-address-resolution opa-libopamgt
 sudo ./mlnxofedinstall
 
 ## restart the service  
+## there are some module depends on rdma_cm
+## remove them first
+sudo modprobe -r rpcrdma ib_srpt ib_isert
 ## check the issue in https://www.mellanox.com/related-docs/prod_software/Mellanox_OFED_Linux_Release_Notes_3_1-1_0_0.pdf
 sudo /etc/init.d/openibd restart
 
