@@ -52,8 +52,8 @@ EOF
 
 
 sudo mv /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.backup
-sudo mv /etc/yum.repos.d/CentOS-Debuginfo.repo  /etc/yum.repos.d/CentOS-Debuginfo.repo.backup
-sudo mv /etc/yum.repos.d/CentOS-Sources.repo /etc/yum.repos.d/CentOS-Sources.repo.backup
+#sudo mv /etc/yum.repos.d/CentOS-Debuginfo.repo  /etc/yum.repos.d/CentOS-Debuginfo.repo.backup
+#sudo mv /etc/yum.repos.d/CentOS-Sources.repo /etc/yum.repos.d/CentOS-Sources.repo.backup
 
 #add local repo storage
 # sudo yum install createrepo
